@@ -1,0 +1,31 @@
+// Fonts -------------------------------->
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap");
+
+// Fonts --------------------------------->
+
+$general-font: "Poppins", sans-serif;
+
+// Font Size ------------------------------>
+
+$size-1: 4em; // 64px
+$size-2: 3.5em; // 56px
+$size-3: 2.75em; // 44px
+$size-4: 2.25em; // 36px
+$size-5: 2em; // 32px
+$size-6: 1.75em; // 28px
+$size-7: 1.5em; // 24px
+$size-8: 1.25em; // 20px
+$size-9: 1em; // 16px
+$size-10: 0.75em; // 12px
+
+//EVOLUCIÓN DE LOS MEDIAQUERIES
+// H1 64PX > (1200) 56PX > (920) 44PX > (700) 36PX
+// H2 32PX > (1200) 32PX > (920) 28PX > (700) 24PX
+// H3 44PX > (1200) 36 PX > (920) 32PX > (700) 28PX
+// H4 32PX > (1200) 32PX > (920) 28PX > (700) 24PX
+
+// P 20PX > (1200) 16 PX > (920) 16PX > (700) 12PX
+// TARJETAS PAISES: 32PX > (1200) 18PX > (920) 18PX > (700) 28PX
+// SUBTITULO: 36PX > (1200) 32PX > (920) 28PX > (700) 24PX
+

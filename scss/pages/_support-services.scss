@@ -1,0 +1,166 @@
+.culture-container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 20px;
+
+  .culture-row {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+    }
+
+    @media screen and (max-width: 920px) {
+      flex-direction: column;
+    }
+
+    .culture-col {
+      flex-basis: 50%;
+      margin-bottom: 2%;
+      padding: 12px 12px;
+      box-sizing: border-box;
+      transition: 0.25s;
+      border-radius: 10px;
+
+      img {
+        border-radius: 10px;
+        width: 100%;
+        display: block;
+      }
+
+      h3 {
+        @include texts($general-font, $size-3, $color-1, 600);
+        @include h3;
+        text-align: center;
+      }
+
+      .culture-text {
+        @include texts($general-font, $size-9, $color-1, 300);
+        width: 80%;
+        margin: auto;
+      }
+    }
+  }
+}
+
+.work-steps-container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+
+  h3 {
+    @include texts($general-font, $size-3, $color-1, 600);
+    @include h3;
+  }
+
+  .work-steps-description {
+    @include texts($general-font, $size-8, $color-1, 300);
+    padding: 10px;
+  }
+
+  .work-steps-row {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dashed $color-1;
+
+    @media screen and (max-width: 700px) {
+      flex-direction: column;
+    }
+
+    .work-steps-col-1 {
+      flex-basis: 10%;
+      margin-bottom: 2%;
+      padding: 20px 12px;
+      box-sizing: border-box;
+      transition: 0.25s;
+      border-radius: 10px;
+
+      img {
+        max-width: 100px;
+      }
+
+    }
+
+    .work-steps-col-2 {
+      flex-basis: 40%;
+      margin-bottom: 2%;
+      padding: 20px 12px;
+      box-sizing: border-box;
+      transition: 0.25s;
+      border-radius: 10px;
+
+      h4 {
+        text-align: center;
+        margin: 10px 0;
+        @include texts($general-font, $size-5, $color-1, 600);
+        @include h4;
+      }
+
+      .work-steps-text {
+        @include texts($general-font, $size-9, $color-1, 300);
+      }
+    }
+
+    .work-steps-col-3 {
+      flex-basis: 40%;
+      margin-bottom: 2%;
+      padding: 20px 12px;
+      box-sizing: border-box;
+      transition: 0.25s;
+      border-radius: 10px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.references-container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+
+  h3 {
+    @include texts($general-font, $size-3, $color-1, 600);
+    @include h3;
+  }
+
+  .references-row {
+    border-radius: 10px;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 700px) {
+      flex-direction: column;
+    }
+
+    .references-col {
+      background-color: $color-10;
+      flex-basis: 15%;
+      padding: 10px;
+      box-sizing: border-box;
+      transition: 0.25s;
+      border-radius: 10px;
+      margin-bottom: 2%;
+
+      img {
+        width: 100%;
+
+        @media screen and (max-width: 700px) {
+            max-width: 50%;
+          }
+      }
+    }
+  }
+}

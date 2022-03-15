@@ -1,0 +1,111 @@
+.distribution-container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 20px;
+
+  .distribution-row {
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+    }
+
+    @media screen and (max-width: 920px) {
+      flex-direction: column;
+    }
+
+    .distribution-col {
+      flex-basis: 50%;
+      margin-bottom: 2%;
+      padding: 12px 12px;
+      box-sizing: border-box;
+      transition: 0.25s;
+      border-radius: 10px;
+
+      img {
+        border-radius: 10px;
+        width: 100%;
+        display: block;
+      }
+
+      h3 {
+        @include texts($general-font, $size-3, $color-1, 600);
+        @include h3;
+        text-align: center;
+      }
+
+      .distribution-text {
+        @include texts($general-font, $size-9, $color-1, 300);
+        width: 80%;
+        margin: auto;
+      }
+    }
+  }
+}
+
+.advatages {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+
+  h3 {
+    @include texts($general-font, $size-3, $color-1, 600);
+    @include h3;
+  }
+
+  .advatages-description {
+    @include texts($general-font, $size-8, $color-1, 300);
+    padding: 10px;
+  }
+
+  .advatages-row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 700px) {
+      flex-direction: column;
+    }
+
+    .advatages-col-1 {
+      flex-basis: 35%;
+      margin-bottom: 2%;
+      padding: 12px 12px;
+      box-sizing: border-box;
+      transition: 0.25s;
+      border-radius: 10px;
+
+      img {
+        width: 100%;
+        border-radius: 10px;
+      }
+    }
+
+    .advatages-col-2 {
+      flex-basis: 60%;
+      margin-bottom: 2%;
+      padding: 12px 12px;
+      box-sizing: border-box;
+      transition: 0.25s;
+
+      h4 {
+        text-align: left;
+        margin: 10px 0;
+
+        @include texts($general-font, $size-5, $color-1, 600);
+        @include h4;
+      }
+
+      .advatages-text {
+        @include texts($general-font, $size-9, $color-1, 300);
+        text-align: left;
+      }
+    }
+  }
+}

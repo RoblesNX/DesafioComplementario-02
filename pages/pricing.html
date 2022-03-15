@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta title -->
+    <meta name="title" content="About us | Adhoc - Odoo Gold Partner">
+
+    <!-- Meta description -->
+    <meta name="description"
+        content="With the Adhoc team we empower and transform organizations through ERP Odoo to make them better places">
+
+    <!-- Meta keywords -->
+    <meta name="keywords"
+        content="odoo, adhoc, odoo erp, odoo software, odoo enterprise, accounting odoo, invoicing odoo, odoo modules, odoo apps, implement odoo, odoo consulting, odoo support">
+
+    <!-- Titulo del website -->
+    <title>Pricing | Adhoc - Odoo Gold Partner</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="We are Adhoc - Odoo Gold Partner">
+    <meta property="og:site_name" content="Adhoc SA">
+    <meta property="og:url" content="https://www.adhoc.com.ar">
+    <meta property="og:description"
+        content="With the Adhoc team we empower and transform organizations through ERP Odoo to make them better places">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://i.ibb.co/MC28wKz/og-image.png">
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/bfe3367c8d.js" crossorigin="anonymous"></script>
+
+    <!-- Sass -->
+    <link rel="stylesheet" href="../scss/style.css">
+
+    <!-- Typewriter effect  -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    <!-- Pricing configurator -->
+    <script src="../src/js/main.js"></script>
+
+</head>
+
+<body>
+
+    <header id="global-header">
+
+        <div id="global-minimal-pattern"></div>
+        <div class="global-overlay"></div>
+
+        <nav class="global-nav">
+            <a href="../index.html"><img src="../src/multimedia/images/adhoc_logo.png" alt="Adhoc logo"></a>
+            <div class="global-nav-links" id="navLinks">
+                <i class="global-menu fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="../pages/about-us.html">ABOUT US</a></li>
+                    <li class="global-dropdown-buttons"><a href="#">INDUSTRIES</a>
+                        <div class="global-dropdown-content">
+                            <a href="../pages/industries/distribution.html">DISTRIBUTION</a>
+                            <a href="../pages/industries/services.html">SERVICES</a>
+                        </div>
+                    </li>
+                    <li class="global-dropdown-buttons"><a href="../pages/support-services.html">SERVICES</a></li>
+                    <li><a href="../pages/contact-us.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="global-menu fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="global-text-box">
+            <h1>Pricing</h1>
+            <h2>We have the right solution for the right price.</h2>
+        </div>
+
+    </header>
+
+    <main id="main">
+
+    </main>
+
+    <footer id="footer">
+        <div class="content">
+            <div class="top">
+                <div class="logo-details">
+                    <img src="../src/multimedia/images/adhoc_logo.png" alt="Adhoc logo">
+                </div>
+                <div class="media-icons">
+                    <a href="https://www.facebook.com/Adhoc.Odoo"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/IngAdhoc"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/adhoc_odoo/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/adhoc"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.youtube.com/channel/UCluE0wv8SGVbQHLxawXXaPw"><i
+                            class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="link-boxes">
+                <ul class="box">
+                    <li class="link-name">Company</li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/contact-us.html">Contact us</a></li>
+                    <li><a href="../pages/about-us.html">About us</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link-name">Services</li>
+                    <li><a href="../pages/support-services.html">Implementation</a></li>
+                    <li><a href="../pages/support-services.html">Training</a></li>
+                    <li><a href="../pages/support-services.html">Support</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link-name">Industries</li>
+                    <li><a href="../pages/industries/distribution.html">Distribution</a></li>
+                    <li><a href="../pages/industries/services.html">Services</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link-name">Useful links</li>
+                    <li><a href="#">Referral program</a></li>
+                    <li><a href="#">What is Odoo?</a></li>
+                </ul>
+                <ul class="box input-box">
+                    <li class="link-name">Subscribe</li>
+                    <li><input type="text" placeholder="Enter your email"></li>
+                    <li><input type="button" value="Subscribe"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-details">
+            <div class="bottom_text">
+                <span class="copyright_text">Copyright © 2022 <a href="#">RoblesNX.</a>All rights reserved</span>
+                <span class="policy_terms">
+                    <a href="#">Privacy policy</a>
+                    <a href="#">Terms & condition</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Hamburger menu - Javascrip -->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+            document.body.style.touchAction = "none";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+            document.body.style.touchAction = "auto";
+        }
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+.services-container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+  
+    .services-row {
+      display: flex;
+      align-items: center;
+      margin-top: 5%;
+  
+      @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+      }
+  
+      @media screen and (max-width: 920px) {
+        flex-direction: column;
+      }
+  
+      .services-col {
+        flex-basis: 50%;
+        margin-bottom: 2%;
+        padding: 12px 12px;
+        box-sizing: border-box;
+        transition: 0.25s;
+        border-radius: 10px;
+  
+        img {
+          border-radius: 10px;
+          width: 100%;
+          display: block;
+        }
+  
+        h3 {
+          @include texts($general-font, $size-3, $color-1, 600);
+          @include h3;
+          text-align: center;
+        }
+  
+        .services-text {
+          @include texts($general-font, $size-9, $color-1, 300);
+          width: 80%;
+          margin: auto;
+        }
+      }
+    }
+  }
